@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title  style="padding: 4%" class="center">
+      <ion-icon name="home"></ion-icon> Welcome to SMART Home!! <ion-icon name="home"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="mar bkgrnd-purple">
+
+  <ion-card>
+    <ion-card-header>
+      <h4>Fans   <ion-icon name="heart"></ion-icon></h4>
+    </ion-card-header>
+    <ion-card-content class="pad">
+      <button (click)="toggleNamedColor('fan1')" ion-button [color]="ionicNamedColorfan1" block>Fan 1 : {{statusFan1}}</button>
+      <button (click)="toggleNamedColor('fan2')" ion-button [color]="ionicNamedColorfan2" block>Fan 2 : {{statusFan2}}</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h4>Lights   <ion-icon name="bulb"></ion-icon></h4>
+    </ion-card-header>
+    <ion-card-content class="pad">
+      <button (click)="toggleNamedColor('light1')" ion-button [color]="ionicNamedColorlight1" block>Light 1 : {{statusLight1}}</button>
+      <button (click)="toggleNamedColor('light2')" ion-button [color]="ionicNamedColorlight2" block>Light 2 : {{statusLight2}}</button>
+      <button (click)="toggleNamedColor('light3')" ion-button [color]="ionicNamedColorlight3" block>light 3 : {{statusLight3}}</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h4>Sounds   <ion-icon name="megaphone"></ion-icon></h4>
+    </ion-card-header>
+    <ion-card-content class="pad">
+      <button ion-button color = "dark" block>Display Sounds</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <h4>Check status   <ion-icon name="podium"></ion-icon></h4>
+    </ion-card-header>
+    <ion-card-content class="pad">
+      <button (click)="showalert()" ion-button block>Show status</button>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>
+      <h5>Department of Electrical Engineering</h5>
+    </ion-card-header>
+    <ion-card-content>
+      <h6>@copyright DoEE</h6>
+    </ion-card-content>
+  </ion-card>
+
+
+ 
+</ion-content>
+<ion-footer style="padding: 3%" class="bkgrnd">
+  <h5 class="white-color"> Department of Electrical Engineering</h5>
+  <h6 class="white-color">@copyright DoEE</h6>
+
+
+</ion-footer>
